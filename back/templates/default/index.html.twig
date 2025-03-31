@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <ul>
+    {% for etape in etapes %}
+    <li>{{ etape.nom }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

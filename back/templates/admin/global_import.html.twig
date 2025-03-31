@@ -1,0 +1,24 @@
+
+{% block content %}
+    <div class="container">
+        <h1>Import Global</h1>
+
+        {% for label, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="alert alert-{{ label }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+        {{ form_start(form) }}
+        <div class="form-group">
+            {{ form_label(form.importFile) }}
+            {{ form_widget(form.importFile, {'attr': {'class': 'form-control'}}) }}
+            {{ form_errors(form.importFile) }}
+        </div>
+
+        {{ form_row(form.submit, {'attr': {'class': 'btn btn-primary'}}) }}
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /lel/back/
+
+# Redirection spécifique pour /lel/back (sans le slash final)
+RewriteCond %{REQUEST_URI} ^/lel/back$
+RewriteRule ^(.*)$ /lel/back/public/admin [R=301,L]
+
+# Redirection spécifique pour /lel/back/ (avec le slash final)
+RewriteCond %{REQUEST_URI} ^/lel/back/$
+RewriteRule ^(.*)$ /lel/back/public/admin [R=301,L]
+
+# Redirection de /lel/back/* vers /lel/back/public/*
+# Ne pas rediriger ce qui est déjà dans public
+RewriteCond %{REQUEST_URI} !^/lel/back/public/
+# Rediriger tous les autres chemins vers leur équivalent dans /public/
+RewriteCond %{REQUEST_URI} ^/lel/back/(.+)$
+RewriteRule ^(.*)$ public/$1 [R=301,L]
+
+# Si le fichier ou dossier n'existe pas, passer à index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php/$1 [L]
