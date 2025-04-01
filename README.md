@@ -37,14 +37,14 @@
 
  - **Système d'exploitation** : Windows (éviter les versions trop datées type Windows XP, le projet a été développé et testé sur windows 10 et plus)
  - **Navigateur supporté :** [Edge](https://support.microsoft.com/fr-fr/microsoft-edge/t%C3%A9l%C3%A9charger-le-nouveau-microsoft-edge-bas%C3%A9-sur-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) (d'autres navigateurs comme Chrome ou Mozilla devraient fonctionner mais des problèmes pourraient survenir.)
- - **Lien d'accès** si WAMP est installé sur chaque pc : http://localhost:5173/
+ - **Lien d'accès** si WAMP est installé sur chaque pc : http://localhost/
  - **Lien d'accès** si les pc sont connectés en réseau sur la machine ayant installé WAMP : 
     1. Rendez-vous sur le pc hôte de WAMP, appuyez sur <kbd>⊞ Win</kbd> + <kbd>R</kbd>
     2. Tappez `cmd` puis appuez sur <kbd>Entrée</kbd>
     3. Vous êtes maintenant dans la console, tappez `ipconfig` puis <kbd>Entrée</kbd>
     4. Notez la valeur de l'adresse **IPv4**
     ![ipv4](readmeRessources/images/ipv4.png)
-    5. Avec les pc utilisateurs connectés au pc serveur, rendez vous à http:/**la valeur de votre IPv4**:5173/
+    5. Avec les pc utilisateurs connectés au pc serveur, rendez vous à http:/**la valeur de votre IPv4**/
 
 
 #### Guide d'installation :
