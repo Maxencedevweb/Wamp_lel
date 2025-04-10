@@ -119,7 +119,7 @@ http://localhost/phpmyadmin/index.php **sur le pc ayant WAMP installé**, connec
     
 ![partage-des-données](readmeRessources/images/partagedonnees.png)
 
-- **⚠️ ATTENTION ⚠️** Si par mégarde vous **perdez** le fichier contenant vos contenus ou **l'écrasez** avec un autre, vous pouvez **retrouver** le fichier initial à [fichiersql](TODO). Il est **recommandé** de garder une **sauvegarde** de votre fichier `.sql` de côté pour **prévenir une perte des données**.
+- **⚠️ ATTENTION ⚠️** Si par mégarde vous **perdez** le fichier contenant vos contenus ou **l'écrasez** avec un autre, vous pouvez **retrouver** le fichier initial à [fichiersql](https://github.com/Maxencedevweb/Wamp_lel/blob/main/bdd.sql). Il est **recommandé** de garder une **sauvegarde** de votre fichier `.sql` de côté pour **prévenir une perte des données**.
 
 ### __Partie développement :__ 
 
@@ -298,49 +298,6 @@ MariaDB 10.11.8
 
 #### Si vous souhaitez installer la stack de développment complète :
 
- 1. Installer [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-
- 2. Installer [Debian](https://apps.microsoft.com/detail/9msvkqc78pk6?hl=fr-FR&gl=FR)
-
- 3. Activer l' **intégration WSL** dans les paramètres de **Docker Desktop**.
-
-![intégration-wsl](readmeRessources/images/wsl.PNG)
-
-(n'hésitez pas à cliquer sur 'Reftech distros' si debian ne s'affiche pas)
-
- 4. Installer [Git](https://git-scm.com/downloads)
-
- 5. Dans votre explorateur de fichiers, vous rendre à `\\wsl.localhost\Debian\home\{nom de l'utilisateur}` et **créez un nouveau dossier** que vous nommerez **LeL**
-
- 6. Entrez dans ce dossier et <kbd>clic droit<kbd> -> `Open Git Bash here`
-
- 7. Vous êtes maintenant dans un console de commande, dedans, tapez `git clone https://gitlab.univ-lr.fr/ntrugeon/docker-symfony-wp-2024.git` puis appuyez sur <kbd>Entrée<kbd>. 
- Si le processus réussi, vous pouvez passer à la suite.
-
-
- 8. Dans votre explorateur de fichiers, vous devriez voir un nouveau dossier nommé **docker-symfony-wp-2024**.
-
- 9. Appuyez sur la touche **Windows** et tappez **Debian** puis appuyez sur la touche <kbd>Entrée<kbd>
-
- 10. Vous êtes maintenant dans une console. Tappez `cd  LeL/docker-symfony-wp-2024` puis appuyez sur <kbd>Entrée<kbd>.
-
- 11. make existingProject ???
-
- 12. Toujours dans la console, tappez `make up` et appuyez sur <kbd>Entrée<kbd> (**Docker Desktop** doit être démarré).
-
- 13. Vous pouvez maintenant accéder au backend via `https://{nom-du-projet}.localhost:8443/` dans votre navigateur.
-
 - Détails de la stack docker à  : https://gitlab.univ-lr.fr/ntrugeon/docker-symfony-wp-2024, [(tutoriel)](https://gitlab.univ-lr.fr/ntrugeon/docker-symfony-wp-2024/-/blob/main/doc/MACHINEPERSOWINDOWS.md) 
 
-#### Pour relancer le back une fois l'environnement déjà installé :
- 
- 1. Lancer **Docker Desktop**
-
- 2. Appuyez sur la touche <kbd>⊞ Win</kbd> et tappez **Debian** puis appuyez sur la touche <kbd>Entrée<kbd>.
-
- 3. Vous êtes maintenant dans une console. Tappez `cd  LeL/docker-symfony-wp-2024` puis appuyez sur <kbd>Entrée</kbd>.
-
- 4. Toujours dans la console, tappez `make up` et appuyez sur <kbd>Entrée<kbd>.
-
- 5. Vous pouvez maintenant accéder au backend via https://{nom-du-projet}.localhost:8443/ dans votre navigateur.
 
