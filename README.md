@@ -35,7 +35,7 @@
 
 #### Environnement d'utilisation :
 
- - **Système d'exploitation** : Windows (éviter les versions trop datées type Windows XP, le projet a été développé et testé sur windows 10 et plus)
+ - **Système d'exploitation** : Windows 11
  - **Navigateur supporté :** [Edge](https://support.microsoft.com/fr-fr/microsoft-edge/t%C3%A9l%C3%A9charger-le-nouveau-microsoft-edge-bas%C3%A9-sur-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) (d'autres navigateurs comme Chrome ou Mozilla devraient fonctionner mais des problèmes pourraient survenir.)
  - **Lien d'accès** si WAMP est installé sur chaque pc : http://localhost/
  - **Lien d'accès** si les pc sont connectés en réseau sur la machine ayant installé WAMP : 
