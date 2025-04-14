@@ -1,5 +1,38 @@
 <?php
 // import-sql.php - Version pour MariaDB
+// Fonction pour supprimer récursivement un dossier et son contenu
+function rrmdir($dir) {
+    if (is_dir($dir)) {
+        $objects = scandir($dir);
+        foreach ($objects as $object) {
+            if ($object != "." && $object != "..") {
+                if (is_dir($dir . "/" . $object)) {
+                    rrmdir($dir . "/" . $object);
+                } else {
+                    unlink($dir . "/" . $object);
+                }
+            }
+        }
+        rmdir($dir);
+        return true;
+    }
+    return false;
+}
+
+// Chemin vers le dossier à nettoyer (imitation cache-clear)
+$cachePath = __DIR__ . '\\back\\var\\cache\\prod';
+
+// Vérifier si le dossier existe et le supprimer
+if (is_dir($cachePath)) {
+    echo "Nettoyage du cache: suppression de $cachePath\n";
+    if (rrmdir($cachePath)) {
+        echo "Le dossier de cache a été supprimé avec succès.\n";
+    } else {
+        echo "ERREUR: Impossible de supprimer le dossier de cache $cachePath\n";
+    }
+} else {
+    echo "Pas de dossier cache à nettoyer ($cachePath)\n";
+}
 
 // Déterminer le chemin de base de WAMP dynamiquement
 $wampBaseDir = dirname(dirname(dirname(__FILE__)));
@@ -230,6 +263,7 @@ if ($fileExists) {
     echo "Création du fichier $configFilePath avec l'IP du serveur: $serverIp\n";
 }
 
+
 // Create or update config.js
 if (file_put_contents($configFilePath, $configContent) === false) {
     echo "ERREUR: Impossible de mettre à jour $configFilePath\n";
@@ -239,4 +273,10 @@ if (file_put_contents($configFilePath, $configContent) === false) {
 echo "Fichier de configuration " . ($fileExists ? "mis à jour" : "créé") . " avec succès.\n";
 echo "Contenu actuel de $configFilePath:\n";
 echo file_get_contents($configFilePath);
+// Display the server IP in a highlighted format
+echo "\n";
+echo "============================================\n";
+echo "     IP DU SERVEUR: $serverIp     \n";
+echo "============================================\n";
+echo "\n";
 ?>

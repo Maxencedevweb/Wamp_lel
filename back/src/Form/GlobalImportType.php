@@ -19,7 +19,7 @@ class GlobalImportType extends AbstractType
                 'mapped' => false,
                 'constraints' => [
                     new File([
-                        'maxSize' => '100M',
+                        'maxSize' => '1024M',
                         'mimeTypes' => [
                             'application/zip',
                             'application/x-zip-compressed',
