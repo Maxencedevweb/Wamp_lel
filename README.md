@@ -291,10 +291,6 @@ MariaDB 10.11.8
 
 - https://back.localhost:8443/api/custom/etapes
 
-#### Si vous souhaitez uniquement le compose.yaml :
-
-[Trouvez-le ici](readmeRessources/compose.yaml).
-
 
 #### Si vous souhaitez installer la stack de développment complète :
 
