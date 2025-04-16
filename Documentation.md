@@ -14,6 +14,15 @@
 
 ### __L'environnement de dévelopement__ : 
 
+#### Si vous souhaitez installer la stack de développment complète :
+
+- Détails de la stack docker à  : https://gitlab.univ-lr.fr/ntrugeon/docker-symfony-wp-2024, [(tutoriel)](https://gitlab.univ-lr.fr/ntrugeon/docker-symfony-wp-2024/-/blob/main/doc/MACHINEPERSOWINDOWS.md) 
+
+
+#### Si vous souhaitez uniquement le compose.yaml :
+
+[compose.yaml](readmeRessources/compose.yaml)
+
 #### Front :
 
 ##### React 18.3.1 avec Vite
@@ -180,9 +189,5 @@ MariaDB 10.11.8
 
 - https://back.localhost:8443/api/custom/etapes
 
-
-#### Si vous souhaitez installer la stack de développment complète :
-
-- Détails de la stack docker à  : https://gitlab.univ-lr.fr/ntrugeon/docker-symfony-wp-2024, [(tutoriel)](https://gitlab.univ-lr.fr/ntrugeon/docker-symfony-wp-2024/-/blob/main/doc/MACHINEPERSOWINDOWS.md) 
 
 
