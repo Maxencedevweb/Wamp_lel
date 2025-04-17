@@ -185,9 +185,18 @@ MariaDB 10.11.8
 
 #### APIs
 
-- https://back.localhost:8443/api/custom/sequences
+- api/custom/sequences
 
-- https://back.localhost:8443/api/custom/etapes
+Ce endpoint regroupe plusieurs données, c'est celui qui est le plus utilisé.
 
+On y récupère toutes les séquences avec leurs contenus : vidéo et exercices et leurs contenus (type, consigne, image ...). Le tout au format suivant :
+ 
+ ![format-sequences](readmeRessources/images/endpointsequence.png)
+
+- api/custom/etapes
+
+Ce endpoint permet de récupérer toutes les étapes et les séquences liées aux étapes depuis la base de données au format suivant :
+
+![format-etapes](readmeRessources/images/endpointetape.png)
 
 
