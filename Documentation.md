@@ -189,7 +189,15 @@ MariaDB 10.11.8
 
 Ce endpoint regroupe plusieurs données, c'est celui qui est le plus utilisé.
 
-On y récupère toutes les séquences avec leurs contenus : vidéo et exercices et leurs contenus (type, consigne, image ...). Le tout au format suivant :
+On y récupère le nom de la séquence et la vidéo liée à cette séquence. 
+
+Ensuite dans cette séquence on récupère les exercices liés à cette séquence, leur type et consigne. 
+
+Pour finir on récupère les contenus liés à cette exercice, l'élément (qui est en fait le contenu), l'url de l'image (qui est stockée dans le dossier /public/images), la video url (qui est stockée dans le dossier /public/videos), le son url (qui est stocké dans le dossier /public/audios), les syllabes (qui sont principalement utilisées pour le type d'exercice C.2bis, H et E.2bis) et pour finir le contenu format qui désigne si le contenu possède une couleur ou du gras. 
+
+Pour récupérer une séquence en particulier on peut utiliser la route /api/custom/sequences/{id}, l'id représente l'id de la séquence.
+
+Le tout au format suivant :
  
  ![format-sequences](readmeRessources/images/endpointsequence.png)
 
