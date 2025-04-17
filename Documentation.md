@@ -1,16 +1,13 @@
-- [x] [Environnement de développement](#lenvironnement-de-d%C3%A9velopement-)
-- [x] [Front](#front-)
-    - Dépendances principales
-    - Dépendances de développement
-    - Structure du projet
+- [Environnement de développement](#lenvironnement-de-d%C3%A9velopement-)
+- [Front](#front-)
+    - [Dépendances principales](#d%C3%A9pendances-principales)
+    - [Dépendances de développement](#d%C3%A9pendances-de-d%C3%A9veloppement)
+    - [Structure du projet](#structure-du-projet)
 
 - [Back](#back-)
     - [Structure de la BDD](#sgbdr-système-de-gestion-de-base-de-données-relationnelle-)
-    - Dépendances principales
-    - Dépendances de développement
-    - APIs
-
-
+    - [Bundles](#bundles-utilis%C3%A9s-)
+    - [APIs](#apis)
 
 ### __L'environnement de dévelopement__ : 
 
